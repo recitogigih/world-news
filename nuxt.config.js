@@ -12,23 +12,26 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel:'StyleSheet', href:'//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons'}
     ]
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#fff', height:'10px' },
   /*
   ** Global CSS
   */
   css: [
+    {src:'~/assets/theme.scss', lang:'scss'}
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src:'~/plugins/vue-material'}
+    {src:'~/plugins/vue-material'},
+    {src:'~/plugins/axios'}
   ],
   /*
   ** Nuxt.js dev-modules
@@ -48,6 +51,10 @@ export default {
   */
   axios: {
   },
+
+  env:{
+    NEWS_API_KEY:"d58d33fd99cd446a863a486ff940b681"
+  },
   /*
   ** Build configuration
   */
@@ -59,3 +66,4 @@ export default {
     }
   }
 }
+
