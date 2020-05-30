@@ -1,0 +1,19 @@
+{
+  "name": "News-App",
+  "version": "1.0.0",
+  "description": "My exceptional Nuxt.js project",
+  "author": "ALEXIA TECH",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "nuxt": "^2.0.0",
+    "vue-material": "^1.0.0-beta-14"
+  },
+  "devDependencies": {}
+}
